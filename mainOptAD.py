@@ -218,8 +218,8 @@ else:
 
 sol = opt(optProb, sens=sens,storeHistory=histFileName)
 
-print sol
+print(sol)
 # Check Solution
 print sol.xStar['xvars']
 np.savetxt('sol.dat',(sol.xStar['xvars']).reshape((1,-1)))
-print sol.fStar
+print(sol.fStar)
